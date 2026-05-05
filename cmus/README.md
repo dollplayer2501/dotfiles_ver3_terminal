@@ -1,0 +1,2 @@
+# My Cmus's configuration.
+
