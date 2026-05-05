@@ -1,19 +1,19 @@
 # My Fastfetch's configuration.
 
-<a href="./CachyOS_Qtile_2026-04-07_14-51-44_trim-by-fastfetch.png"><img src="./CachyOS_Qtile_2026-04-07_14-51-44_trim-by-fastfetch.png" width="40%"></a>
+There are two types of configuration files:
 
-I have separate settings for the long and short greetings.
-The short greeting is the string displayed when the terminal starts.
-I'm using this unusual setting because I don't want to break the Fish shell settings, `fish_greeting`, that were configured by the distribution.
-Therefore, when I run fastfetch normally, I issue the following command.
+1. Long format  
+`./config..full.jsonc`  
+For external presentation.
+2. Short format  
+`./config..short.jsonc`  
+Functions as `fish_greeting`.
 
+To switch between configuration files, run the following abbreviation in the Fish shell.
+If no configuration file is specified, `./config..short.jsonc` will be executed.
+
+
+```fish
+abbr --add my_fastfetch_full 'command fastfetch --config ~/.config/fastfetch/config..full.jsonc'
+abbr --add my_fastfetch_short 'command fastfetch --config ~/.config/fastfetch/config..short.jsonc'
 ```
-abbr --add my_fastfetch 'command fastfetch --config ~/.config/fastfetch/config..long.jsonc'
-```
-
-
-<!--
-MOTE: This is full configuration
-fastfetch --gen-config-full
--->
-
