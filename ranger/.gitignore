@@ -1,0 +1,9 @@
+/colorschemes/*
+!/colorschemes/default_kai.py
+!.gitignore
+!commands.py
+!commands_full.py
+!rc.conf
+!rifle.conf
+!scope.sh
+

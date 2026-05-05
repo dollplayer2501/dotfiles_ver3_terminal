@@ -1,0 +1,170 @@
+#
+# TODO: display tty and terminal name from fish function
+#
+
+add_newline         = false
+
+
+#
+# Left format
+#
+#  Check `starship explain`
+#  See Unicode Box-drawing characters
+#
+# format              = """
+# [─┬](#ff7f7f) $hostname[,](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $time [┐](#ff7f7f)
+# [ ├](#ff7f7f) $directory  $git_status$git_branch$git_commit$git_state$git_metrics $fill $memory_usage [┤](#ff7f7f)
+# [ └](#ff7f7f)$character${custom.ranger}
+format              = """
+[┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $python$nodejs$lua
+[├](#ff7f7f) $directory  $git_status$git_branch$git_commit$git_state$git_metrics
+[└](#ff7f7f)$character${custom.ranger}
+"""
+
+
+#
+# Right format
+#
+# right_format = "$python$nodejs$lua [┘](#ff7f7f)"
+
+
+#
+#
+#
+
+[fill]
+symbol              = ' '
+style               = '#ff7f7f'
+
+#
+#
+#
+
+[hostname]
+format              = '[$ssh_symbol](#7f3fbf)[$hostname](#7f3fbf)'
+ssh_only            = false
+ssh_symbol          = 'SSH '
+trim_at             = '.companyname.com'
+
+[localip]
+ssh_only            = false
+format              = '[$localipv4](#7f3fbf)'
+disabled            = false
+
+[username]
+format              = '[$user]($style)'
+style_user          = '#7f3fbf'
+style_root          = '#cc3980'
+disabled            = false
+show_always         = true
+
+[sudo]
+format              = '[-](#7f3fbf) [$symbol]($style)'
+style               = '#cc3980'
+symbol              = 'sudo'
+disabled            = false
+
+[time]
+time_format         = '%a, %b %-d %Y, %H:%M:%S'
+format              = '[$time]($style)'
+style               = '#7f3fbf'
+disabled            = false
+use_12hr            = false
+
+[memory_usage]
+threshold           = -1
+format              = '[Ram:${ram_pct}]($style) [Swap:${swap_pct}]($style)'
+symbol              = ''
+style               = '#7f3fbf'
+disabled            = false
+
+[directory]
+format              = '[$read_only]($read_only_style)[$path]($style)'
+read_only           = 'read-only: '
+read_only_style     = 'bold #cc3980'
+style               = '#7f7fff'
+truncation_length   = 0
+truncate_to_repo    = false
+home_symbol         = '/home/dollplayer'
+
+[character]
+success_symbol      = '[🯁🯂🯃](bold #ff7f7f)'
+error_symbol        = '[🯁🯂🯃](bold #cc3980)'
+# The format string used before the text input if the shell is in vim normal mode.
+  vimcmd_symbol = '[<<<](red)'
+# The format string used before the text input if the shell is in vim replace_one mode.
+  vimcmd_replace_one_symbol = '[<<<](#7f3fbf)'
+# The format string used before the text input if the shell is in vim replace mode.
+  vimcmd_replace_symbol = '[<<<](#9999cc)'
+# The format string used before the text input if the shell is in vim replace mode.
+  vimcmd_visual_symbol = '[<<<](#9999cc)'
+
+
+#
+#
+#
+
+[python]
+format              = '([Python ${pyenv_prefix}(${version})( \($virtualenv\))]($style))'
+style               = '#7f3fbf'
+
+[nodejs]
+format              = '([Node ${version}]($style))'
+style               = '#7f3fbf'
+
+[lua]
+format              = '([Lua ${version}]($style))'
+style               = '#7f3fbf'
+
+
+#
+#
+#
+
+[git_status]
+format              = '([\[$all_status$ahead_behind\]]($style) )'
+conflicted          = '='
+ahead               = '⇡'
+behind              = '⇣'
+diverged            = '⇕'
+up_to_date          = '✓'
+untracked           = '?'
+stashed             = '$'
+modified            = '!'
+staged              = '+'
+renamed             = '»'
+deleted             = '✘'
+typechanged         = 't'
+style               = '#7f3fbf'
+
+[git_branch]
+format              = '([$symbol$branch(:$remote_branch)]($style) )'
+symbol              = ''
+style               = '#7f3fbf'
+
+[git_commit]
+format              = '([\($hash$tag\)]($style) )'
+style               = '#7f3fbf'
+
+[git_state]
+format              = '([\($state( $progress_current of $progress_total)\)]($style) )'
+style               = '#7f3fbf'
+
+[git_metrics]
+format              = '([+$added]($added_style)[/](#7f3fbf)[-$deleted]($deleted_style) )'
+added_style         = '#7f3fbf'
+deleted_style       = '#7f3fbf'
+only_nonzero_diffs  = true
+ignore_submodules   = true
+disabled            = false
+
+
+[custom.ranger]
+shell               = ['fish']
+command             = "echo $STARSHIP_SHELL_INDICATOR"
+when                = true
+style               = 'bold #ff7f7f'
+
+
+##
+

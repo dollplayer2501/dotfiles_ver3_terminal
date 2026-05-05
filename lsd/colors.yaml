@@ -1,0 +1,48 @@
+#
+# https://github.com/Peltoche/lsd
+#
+# Xterm_256color_chart
+#  https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
+#
+
+permission:
+
+  read: 238
+  write: 238
+  exec: 242
+
+  exec-sticky: red
+  no-access: 242
+  octal: red
+  acl: red
+  context: red
+
+user: 238
+
+group: 238
+
+size:
+
+  none: red
+  small: 238
+  medium: 242
+  large: 250
+
+date:
+
+  hour-old: 250
+  day-old: 242
+  older: 238
+
+inode:
+
+  valid: red
+  invalid: red
+
+links:
+
+  valid: red
+  invalid: red
+
+tree-edge: 242
+

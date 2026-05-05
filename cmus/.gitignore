@@ -1,0 +1,11 @@
+/playlists/
+autosave
+cache
+command-history
+lib.pl
+search-history
+
+!.gitignore
+
+*.theme
+!spotify-kaizou.theme
