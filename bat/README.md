@@ -2,11 +2,10 @@
 
 I am using [neofusion.bat, Neofusion theme for bat](https://github.com/diegoulloao/neofusion.bat).
 For instructions on how to implement this, see [Adding new themes](https://github.com/sharkdp/bat?tab=readme-ov-file#adding-new-themes).
-Unlike other configurations, I think this one has a few quirks.
 
 I use the Fish shell, so I have the following settings:
 
-```
+```fish
 abbr --add bat 'command bat --theme="neofusion"'
 ```
 
