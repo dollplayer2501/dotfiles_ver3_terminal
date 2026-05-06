@@ -41,14 +41,14 @@ The base environment is the Xfce4 environment on EndeavourOS. In other words, th
 When it's possible to specify colors using HEX colors, I'm using the following color set.
 This can be checked with `[./fish/functions/my_color_scheme.fish](./fish/functions/my_color_scheme.fish)`.
 
-- <span style="color:#08052b">#08052b</span>
-- <span style="color:#221f45">#221f45</span>
-- <span style="color:#7f3fbf">#7f3fbf</span>
-- <span style="color:#7f7fff">#7f7fff</span>
-- <span style="color:#7fbaff">#7fbaff</span>
-- <span style="color:#9999cc">#9999cc</span>
-- <span style="color:#cc3980">#cc3980</span>
-- <span style="color:#cdccdb">#cdccdb</span>
-- <span style="color:#e3e3ea">#e3e3ea</span>
-- <span style="color:#ff7f7f">#ff7f7f</span>
+- `#08052b`
+- `#221f45`
+- `#7f3fbf`
+- `#7f7fff`
+- `#7fbaff`
+- `#9999cc`
+- `#cc3980`
+- `#cdccdb`
+- `#e3e3ea`
+- `#ff7f7f`
 
