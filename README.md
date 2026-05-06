@@ -10,7 +10,7 @@ I plan to create separate dotfiles for desktop environments and window managers.
 
 - - -
 
-Regarding my personal approach to managing dotfiles:
+## Regarding my personal approach to managing dotfiles:
 
 - I don't use a special application for managing dotfiles.
 - The actual dotfiles are all stored in this repository.
@@ -31,4 +31,24 @@ See [`./fish/functions/my_mv_and_ln.fish`](./fish/functions/my_mv_and_ln.fish) f
 I will need to implement this Fish shell script function at a later date.
 
 I'm not sure if this management method is the best solution for me.
+
+
+## Regarding the overall color scheme:
+
+I'm not aiming for "perfection."
+I'm just hoping for a color scheme that's roughly in line with the desired look.  
+The base environment is the Xfce4 environment on EndeavourOS. In other words, the background is dark blue, with orange and dark purple as accent colors.  
+When it's possible to specify colors using HEX colors, I'm using the following color set.
+This can be checked with `[./fish/functions/my_color_scheme.fish](./fish/functions/my_color_scheme.fish)`.
+
+- <span style="color:#08052b">#08052b</span>
+- <span style="color:#221f45">#221f45</span>
+- <span style="color:#7f3fbf">#7f3fbf</span>
+- <span style="color:#7f7fff">#7f7fff</span>
+- <span style="color:#7fbaff">#7fbaff</span>
+- <span style="color:#9999cc">#9999cc</span>
+- <span style="color:#cc3980">#cc3980</span>
+- <span style="color:#cdccdb">#cdccdb</span>
+- <span style="color:#e3e3ea">#e3e3ea</span>
+- <span style="color:#ff7f7f">#ff7f7f</span>
 
