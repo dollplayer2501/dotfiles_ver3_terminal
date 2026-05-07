@@ -35,11 +35,11 @@ I'm not sure if this management method is the best solution for me.
 
 ## Regarding the overall color scheme:
 
-I'm not aiming for "perfection."
+I'm not aiming for "_perfection_."
 I'm just hoping for a color scheme that's roughly in line with the desired look.  
 The base environment is the Xfce4 environment on EndeavourOS. In other words, the background is dark blue, with orange and dark purple as accent colors.  
 When it's possible to specify colors using HEX colors, I'm using the following color set.
-This can be checked with `[./fish/functions/my_color_scheme.fish](./fish/functions/my_color_scheme.fish)`.
+This can be checked with [`./fish/functions/my_color_scheme.fish`](./fish/functions/my_color_scheme.fish).
 
 - ![#08052b](https://placehold.co/15x15/08052b/08052b.png) `#08052b`
 - ![#221f45](https://placehold.co/15x15/221f45/221f45.png) `#221f45`
