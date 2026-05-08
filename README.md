@@ -35,9 +35,11 @@ I'm not sure if this management method is the best solution for me.
 
 ## Regarding the overall color scheme:
 
-I'm not aiming for "_perfection_."
+I'm not aiming for "_perfection_," nor am I striving to create a "_rice_" that I want to show off to others.
 I'm just hoping for a color scheme that's roughly in line with the desired look.  
-The base environment is the Xfce4 environment on EndeavourOS. In other words, the background is dark blue, with orange and dark purple as accent colors.  
+The base environment is the Xfce4 environment on EndeavourOS.
+If my memory serves me correctly, EndeavourOS's Xfce4 directly used the color scheme from xfce4-terminal.
+In other words, the background is dark blue, with orange and dark purple as accent colors.  
 When it's possible to specify colors using HEX colors, I'm using the following color set.
 This can be checked with [`./fish/functions/my_color_scheme.fish`](./fish/functions/my_color_scheme.fish).
 
