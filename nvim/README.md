@@ -1,4 +1,6 @@
-# 💤 LazyVim
+# My Neovim's configuration.
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+I rely entirely on [LazyVim](https://www.lazyvim.org/) for my Neovim environment.
+
+On the other hand, recently, while it might be an exaggeration to call it a re-evaluation of Vim, I've started to think that, if used for specific purposes, Vim might actually be quite acceptable. For heavy coding, I use Code/OSS.
+
