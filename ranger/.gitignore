@@ -1,5 +1,5 @@
 /colorschemes/*
-!/colorschemes/default_kai.py
+!/colorschemes/default_kaizou.py
 !.gitignore
 !commands.py
 !commands_full.py
