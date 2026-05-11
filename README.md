@@ -8,7 +8,7 @@ I plan to create separate dotfiles for desktop environments and window managers.
 Regarding desktop environments and window managers, I use the following:
 
 - EndeavourOS
-- First, I install the Xfce environment.
+- First, I install the Xfce4 environment.
 - Next, I install Qtile, which I use as my main tool.
 
 <img src="./Chandanna_EndeavourOS_Qtile_2026-05-05_16-09-19.png" width="500">
