@@ -3,10 +3,16 @@
 > [!NOTE]
 > Currently, it's just been "uploaded for now." (Early May 2026)
 
-This is my terminal-related dotfiles.
-I plan to create separate dotfiles for desktop environments and window managers.
+This is my **terminal-related dotfiles**.
+I plan to create separate dotfiles for desktop environments and window managers.  
+Regarding desktop environments and window managers, I use the following:
+
+- EndeavourOS
+- First, I install the Xfce environment.
+- Next, I install Qtile, which I use as my main tool.
 
 <img src="./Chandanna_EndeavourOS_Qtile_2026-05-05_16-09-19.png" width="500">
+<img src="./Chandanna_EndeavourOS_Qtile_2026-05-11_11-19-30.png" width="500">
 
 - - -
 
