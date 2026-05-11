@@ -5,6 +5,7 @@ return {
     -- tokyonight-night
     -- tokyonight-day
     "folke/tokyonight.nvim",
+    enabled = false,
     opts = {
       transparent = true,
       styles = {
@@ -14,9 +15,18 @@ return {
     },
   },
   {
+    "ellisonleao/gruvbox.nvim",
+    lazy = true,
+    enabled = true,
+    opts = {
+      transparent_mode = true,
+    },
+  },
+  {
     "diegoulloao/neofusion.nvim",
     priority = 1000,
     config = true,
+    enabled = false,
     opts = {
       transparent_mode = true,
     },
@@ -24,7 +34,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "neofusion",
+      colorscheme = "gruvbox",
     },
   },
 }
