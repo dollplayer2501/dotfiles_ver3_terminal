@@ -1,11 +1,12 @@
-# My terminal-related dotfiles
+# My terminal related dotfiles
 
 > [!NOTE]
 > Currently, it's just been "uploaded for now." (Early May 2026)
 
-This is my **terminal-related dotfiles**.
-I plan to create separate dotfiles for desktop environments and window managers.  
-Regarding desktop environments and window managers, I use the following:
+This is my **terminal related dotfiles**.  
+For the settings of window manager related dotfiles, refer to [https://github.com/dollplayer2501/dotfiles_ver3_window-manager](https://github.com/dollplayer2501/dotfiles_ver3_window-manager).
+
+The following is a general overview of this environment:
 
 - EndeavourOS
 - First, I install the Xfce4 environment.
