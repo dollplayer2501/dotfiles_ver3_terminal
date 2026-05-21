@@ -15,7 +15,7 @@ abbr --add feh 'command feh --no-fehbg --bg-fill'
 abbr --add pict-identify 'command identify -format "%wx%h:%Q"'
 abbr --add yay 'yay --sudoloop'
 
-abbr --add cd z # zoxide
+# abbr --add cd z # zoxide
 
 abbr --add la 'command lsd --long --almost-all --classify --versionsort --color=auto --date "+%Y-%m-%d %H:%M"'
 abbr --add my_fastfetch_full 'command fastfetch --config ~/.config/fastfetch/config..full.jsonc'

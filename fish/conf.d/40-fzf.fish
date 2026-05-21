@@ -2,24 +2,13 @@
 #
 #
 
-#set --export FZF_DEFAULT_OPTS "
-#  --height=35%
-#  --layout=reverse
-#  --border
-#  --inline-info
-#  --preview 'bat --color=always {}'
-#"
-
-
-
-#export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-
-# vitormv.github.io fzf Theme Generator
-# https://vitormv.github.io/fzf-themes/
-
 #
 # NOTE:
-#  - Shift + Up/Down is enabled in right preview pane
+#   vitormv.github.io fzf Theme Generator
+#   https://vitormv.github.io/fzf-themes/
+#
+#   - Shift + Up/Down is enabled in right preview pane
+#   - bind | grep fzf | sort
 #
 
 set --export FZF_DEFAULT_OPTS '
@@ -36,5 +25,10 @@ set --export FZF_DEFAULT_OPTS '
   --border="rounded" --border-label="FZF" --preview-window="border-rounded" --prompt="> "
   --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
 
-
 fzf --fish | source
+
+#
+# NOTE:
+# The following description has been moved to `./fish/config.fish`.
+# fzf_configure_bindings --directory=\e\cd
+#
