@@ -1,5 +1,5 @@
 --
---
+-- NOTE: Supports hex, rgb, hsl, CSS variables, and Tailwind CSS
 --
 
 return {
