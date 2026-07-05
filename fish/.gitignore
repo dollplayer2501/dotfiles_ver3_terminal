@@ -13,6 +13,7 @@ conf.d/*
 !conf.d/4?-*.fish
 !conf.d/5?-*.fish
 conf.d/21-add-path.fish
+conf.d/23-abbr-add.fish
 
 functions/*
 !functions/.gitkeep
