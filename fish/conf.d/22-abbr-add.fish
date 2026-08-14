@@ -46,3 +46,20 @@ abbr --add zz 'z ../'
 # What I need for Picom settings and the like is the value of the second argument of `WM_CLASS(STRING)`.
 abbr --add my_xprop 'command xprop | grep WM_CLASS'
 
+#
+# I added this because I can't keep track of it.
+# Especially regarding the `find` and `fd` commands.
+# The `bind -M` output shows the key bindings for each mode.
+#
+# TODO: Changing the key assignment for `ctrl-alt-p _fzf_search_processes`.
+# It is likely conflicting with keybindings related to the Japanese input method.
+abbr --add my_fish_keybind_list 'bind | grep _fzf_search'
+
+#
+# I have a poor memory.
+# Because of this, I somehow mistakenly believe that the display manager I use is SDDM.
+# That is not the case.
+#
+abbr --add my_display_manager 'systemctl status display-manager'
+
+
