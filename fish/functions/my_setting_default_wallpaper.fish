@@ -1,5 +1,6 @@
 #
-#
+# NOTE:
+#  Note: This script references a separate file (an INI file) for the wallpaper.
 #
 
 function my_setting_default_wallpaper --description "Force the wallpaper provided by the distribution to be set."

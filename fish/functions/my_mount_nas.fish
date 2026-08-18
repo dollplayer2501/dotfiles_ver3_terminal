@@ -1,5 +1,6 @@
 #
-#
+# NOTE:
+#  This script references an external file (an .ini file) for settings such as mount points.
 #
 
 function my_mount_nas --description "Mount NAS."
@@ -12,6 +13,7 @@ function my_mount_nas --description "Mount NAS."
   end
   # echo $mount_device
   # echo $mount_point
+  # return
 
   set --local message_tips "If NAS mount is unnecessary, execute `sudo umount $mount_point`"
 
