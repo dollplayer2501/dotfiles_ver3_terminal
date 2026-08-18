@@ -8,12 +8,15 @@ completions/my_atomicparsley_*.fish
 
 conf.d/*
 !conf.d/.gitkeep
-!conf.d/1?-*.fish
-!conf.d/2?-*.fish
-!conf.d/4?-*.fish
-!conf.d/5?-*.fish
-conf.d/21-add-path.fish
-conf.d/23-abbr-add.fish
+!conf.d/11-my_env.fish
+!conf.d/21-add-path.fish
+!conf.d/31-abbr-add.fish
+!conf.d/40-fzf.fish
+!conf.d/40-mise.fish
+!conf.d/40-ranger.fish
+!conf.d/40-starship.fish
+!conf.d/40-vivid.fish
+!conf.d/40-zoxide.fish
 
 functions/*
 !functions/.gitkeep
