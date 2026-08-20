@@ -163,13 +163,18 @@
     {
       "type": "terminal"
     },
+//    {
+//      "type": "uptime"
+//    },
     {
-      "type": "uptime"
-    },
-    {
-      "key": "Login",
+      "key": "Uptime",
       "type": "command",
-      "text": "fish -c 'my_login_elapsed hoge'"
+      "text": "awk '{print $1}' /proc/uptime | my_python_sec_to_regular_time.py"
+     },
+    {
+      "key": "Login ",
+      "type": "command",
+      "text": "fish -c 'my_login_elapsed --second | my_python_sec_to_regular_time.py'"
     },
 //    {
 //      "key": "Updates",
