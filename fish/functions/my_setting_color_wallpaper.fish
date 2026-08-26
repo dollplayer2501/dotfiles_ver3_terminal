@@ -11,6 +11,16 @@
 function my_setting_color_wallpaper --description "Create an image in a specified color and set it as the wallpaper."
 
   #
+  # TODO:
+  #  Separately, here is a script to set a two-color gradient background.
+  #  In this case, rotation is also required.
+  #  The new script is named `my_setting_color_wallpaper_gradient`, while this one is `my_setting_color_wallpaper_mono`.
+  #  Or `my_setting_wallpaper_color_gradient`, while this one is `my_setting_wallpaper_color_mono`.
+  #  (In this case, in terms of naming, a chain reaction occurs in which `my_setting_default_wallpaper` becomes `my_setting_wallpaper_default`.)
+  #  Implementing three or more colors is a hassle.
+  #
+
+  #
   # Load default setting
   #
 
@@ -26,15 +36,41 @@ function my_setting_color_wallpaper --description "Create an image in a specifie
   # Check arguments
   #
 
-  argparse 'c/color=' 's/size=' -- $argv
-    or return 1
+  if test (count $argv) -eq 0
+    #
+    # NOTE:
+    #  To display help when no arguments or argument values ​​are provided,
+    #  include only the following description.
+    #
+    # set argv --help
+    #
 
-  set --local confirm_color $default_color
-  set --local confirm_size  $default_size
+    read --local --prompt-str (set_color yellow)"Continue to proceed? $default_color and $default_size, [y/N]: "(set_color normal) answer
+    switch $answer
+    case y Y yes YES
+      echo (set_color yellow)"Continuing"(set_color normal)
+    case '*'
+      echo (set_color yellow)"Cancelled"(set_color normal)
+      return 0
+    end
+  end
+
+  set --local options 'h/help' 'c/color=' 's/size='
+  argparse $options -- $argv; or return 1
+
+  if set -q _flag_help
+    echo (set_color green)"Usage: my_setting_color_wallpaper [-h|--help] [-c|--color color] [-s|--size size]"(set_color normal)
+    echo (set_color green)"  If nothing is specified, color is set $default_color and size is set $default_size."
+    echo (set_color green)"  This setting references the value of $ini_file."
+    return 0
+  end
 
   #
   # Confirm settings
   #
+
+  set --local confirm_color $default_color
+  set --local confirm_size  $default_size
 
   if set -q _flag_color
     set confirm_color $_flag_color
