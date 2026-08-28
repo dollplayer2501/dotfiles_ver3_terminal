@@ -22,13 +22,19 @@ abbr --add yay 'yay --sudoloop'
 
 #
 
-abbr --add my_update_pkg_non_aur 'sudo pacman -Syu'
-abbr --add my_update_pkg_aur 'yay -Sua --aur --editmenu'
+abbr --add my_package_list_aur 'pacman -Qm'
+abbr --add my_package_update_aur 'yay -Sua --aur --editmenu'
+abbr --add my_package_update_official 'sudo pacman -Syu'
+abbr --add my_flatpak_list 'flatpak list --app'
+abbr --add my_flatpak_update 'flatpak update'
 
 abbr --add my_fastfetch_full 'command fastfetch --config ~/.config/fastfetch/config..full.jsonc'
 abbr --add my_fastfetch_short 'command fastfetch --config ~/.config/fastfetch/config..short.jsonc'
 
+#
+
 abbr --add my_endeavouros_birth "command head -n1 /var/log/pacman.log | cut -d'T' -f1 | tr -d '['"
+abbr --add my_display_manager 'systemctl status display-manager'
 abbr --add my_magick_identify 'command identify -format "%wx%h:%Q"'
 
 
@@ -53,12 +59,3 @@ abbr --add my_xprop 'command xprop | grep WM_CLASS'
 # NOTE:
 # If a line contains the string "fzf" but starts with the character "#", that line is excluded from the search.
 abbr --add my_fish_keybind_list 'bind | grep fzf | grep -v "^#" | sort'
-
-#
-# I have a poor memory.
-# Because of this, I somehow mistakenly believe that the display manager I use is SDDM.
-# That is not the case.
-#
-abbr --add my_display_manager 'systemctl status display-manager'
-
-
