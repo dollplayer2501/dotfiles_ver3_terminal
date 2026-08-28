@@ -40,20 +40,19 @@ abbr --add my_magick_identify 'command identify -format "%wx%h:%Q"'
 
 # NOTE:
 # Assuming the zoxide configuration for the fish shell is active.
-abbr --add zz 'z ../'
+abbr --add zz  'z ../'
+abbr --add zzz 'z ../../'
+
 
 # NOTE:
 # What I need for Picom settings and the like is the value of the second argument of `WM_CLASS(STRING)`.
 abbr --add my_xprop 'command xprop | grep WM_CLASS'
 
+
 #
-# I added this because I can't keep track of it.
-# Especially regarding the `find` and `fd` commands.
-# The `bind -M` output shows the key bindings for each mode.
-#
-# TODO: Changing the key assignment for `ctrl-alt-p _fzf_search_processes`.
-# It is likely conflicting with keybindings related to the Japanese input method.
-abbr --add my_fish_keybind_list 'bind | grep _fzf_search'
+# NOTE:
+# If a line contains the string "fzf" but starts with the character "#", that line is excluded from the search.
+abbr --add my_fish_keybind_list 'bind | grep fzf | grep -v "^#" | sort'
 
 #
 # I have a poor memory.
