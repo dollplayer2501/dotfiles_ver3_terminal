@@ -8,7 +8,7 @@
 #    `set tmpfile (mktemp -t tmp.XXXXXX.png)`
 #
 
-function my_setting_color_wallpaper --description "Create an image in a specified color and set it as the wallpaper."
+function my_wallpaper_set_one_color --description "Create an image in a specified color and set it as the wallpaper."
 
   #
   # TODO:
@@ -24,7 +24,13 @@ function my_setting_color_wallpaper --description "Create an image in a specifie
   # Load default setting
   #
 
-  set --local ini_file ~/.config/fish/conf.d/ini/my_setting_color_wallpaper.ini
+  set --local ini_file ~/.config/fish/conf.d/ini/my_wallpaper_set_one_color.ini
+
+  if not test -f $ini_file
+    echo (set_color red)"INI file not found: $ini_file"(set_color normal) >&2
+    echo (set_color red)"Refer to the sample ini file in this directory."(set_color normal)
+    return 1
+  end
 
   for line in (cat $ini_file)
     set key (string split -m1 '=' $line)[1]
