@@ -11,16 +11,6 @@
 function my_wallpaper_set_one_color --description "Create an image in a specified color and set it as the wallpaper."
 
   #
-  # TODO:
-  #  Separately, here is a script to set a two-color gradient background.
-  #  In this case, rotation is also required.
-  #  The new script is named `my_setting_color_wallpaper_gradient`, while this one is `my_setting_color_wallpaper_mono`.
-  #  Or `my_setting_wallpaper_color_gradient`, while this one is `my_setting_wallpaper_color_mono`.
-  #  (In this case, in terms of naming, a chain reaction occurs in which `my_setting_default_wallpaper` becomes `my_setting_wallpaper_default`.)
-  #  Implementing three or more colors is a hassle.
-  #
-
-  #
   # Load default setting
   #
 
@@ -38,8 +28,9 @@ function my_wallpaper_set_one_color --description "Create an image in a specifie
     set $key $val
   end
 
+
   #
-  # Check arguments
+  # If no argument is specified, processing continues using the default value.
   #
 
   if test (count $argv) -eq 0
@@ -61,15 +52,21 @@ function my_wallpaper_set_one_color --description "Create an image in a specifie
     end
   end
 
+
+  #
+  # Check arguments
+  #
+
   set --local options 'h/help' 'c/color=' 's/size='
   argparse $options -- $argv; or return 1
 
   if set -q _flag_help
     echo (set_color green)"Usage: my_setting_color_wallpaper [-h|--help] [-c|--color color] [-s|--size size]"(set_color normal)
-    echo (set_color green)"  If nothing is specified, color is set $default_color and size is set $default_size."
-    echo (set_color green)"  This setting references the value of $ini_file."
+    echo (set_color green)"  If nothing is specified, color is set $default_color and size is set $default_size."(set_color normal)
+    echo (set_color green)"  This setting references the value of $ini_file."(set_color normal)
     return 0
   end
+
 
   #
   # Confirm settings

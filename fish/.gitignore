@@ -21,9 +21,7 @@ conf.d/*
 !conf.d/ini/
 conf.d/ini/*
 !conf.d/ini/.gitkeep
-!conf.d/ini/my_mount_nas.SAMPLE.ini
-!conf.d/ini/my_setting_color_wallpaper.SAMPLE.ini
-!conf.d/ini/my_setting_default_wallpaper.SAMPLE.ini
+!conf.d/ini/my_*.SAMPLE.ini
 
 functions/*
 !functions/.gitkeep
