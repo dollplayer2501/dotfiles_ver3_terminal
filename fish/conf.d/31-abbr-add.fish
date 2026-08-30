@@ -36,6 +36,7 @@ abbr --add my_fastfetch_short 'command fastfetch --config ~/.config/fastfetch/co
 abbr --add my_endeavouros_birth "command head -n1 /var/log/pacman.log | cut -d'T' -f1 | tr -d '['"
 abbr --add my_display_manager 'systemctl status display-manager'
 abbr --add my_magick_identify 'command identify -format "%wx%h:%Q"'
+abbr --add my_font_list_without_noto 'fc-list : family | sort -u | grep -v "Noto"'
 
 
 #
