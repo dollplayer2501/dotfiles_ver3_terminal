@@ -1,0 +1,7 @@
+{
+  "url": "https://api.sunrise-sunset.org/json?lat=%s&lng=%s&formatted=0&tzid=%s&date=%s",
+  "lat": 34.7443,
+  "lng": 134.9156,
+  "tzid": "Asia/Tokyo",
+  "sleep": 5
+}
