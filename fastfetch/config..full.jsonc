@@ -140,7 +140,8 @@
     {
       "type": "host",
       "format": "{vendor} {name}",
-      "keyIcon": "󰌢"
+      "keyIcon": "󰌢",
+      "outputColor": "#ff7f7f"
     },
     {
       "type": "bios"
@@ -152,7 +153,8 @@
       "type": "cpu",
       "keyIcon": "",
       "temp": true,
-      "showPeCoreCount": true
+      "showPeCoreCount": true,
+      "outputColor": "#ff7f7f"
     },
     {
       "type": "gpu",
@@ -187,7 +189,8 @@
       "separate": true
     },
     {
-      "type": "sound"
+      "type": "sound",
+      "soundType": "active"
     },
     {
       "type": "mouse"
@@ -249,7 +252,8 @@
     },
     {
       "type": "uptime",
-      "keyIcon": ""
+      "keyIcon": "",
+      "outputColor": "green"
     },
     {
       "type": "separator",
@@ -272,9 +276,6 @@
       "outputColor": "#ff7f7f"
     },
     {
-      "type": "initsystem"
-    },
-    {
       "condition": {
         "!system": "macOS"
       },
@@ -282,6 +283,9 @@
       "key": "OS Age",
       "folders": "/",
       "format": "{create-time:10} [{days} days]"
+    },
+    {
+      "type": "initsystem"
     },
     {
       "type": "packages",
@@ -324,6 +328,10 @@
       "times": 3
     },
     {
+      "type": "locale",
+      "keyIcon": ""
+    },
+    {
       "type": "de",
       "keyIcon": "",
       "outputColor": "#ff7f7f"
@@ -344,16 +352,11 @@
       "outputColor": "#ff7f7f"
     },
     {
-      "type": "locale",
-      "keyIcon": ""
-    },
-    {
       "type": "terminalfont",
       "keyIcon": ""
     },
     {
-      "type": "editor",
-      "outputColor": "#ff7f7f"
+      "type": "editor"
     },
     {
       "type": "battery",

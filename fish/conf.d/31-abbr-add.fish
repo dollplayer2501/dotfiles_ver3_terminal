@@ -14,7 +14,7 @@ abbr --add la 'command lsd --long --almost-all --classify --versionsort --color=
 
 #
 
-abbr --add bat 'command bat --theme="neofusion"'
+abbr --add bat 'command bat --theme="neofusion" --plain' # or --number
 abbr --add delta 'command delta --side-by-side --line-numbers'
 abbr --add feh 'command feh --no-fehbg --bg-fill'
 abbr --add yay 'yay --sudoloop'
