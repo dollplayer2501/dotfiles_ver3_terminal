@@ -7,6 +7,16 @@ function my_mount_nas --description "Mount NAS."
   set --local ini_file ~/.config/fish/conf.d/ini/my_mount_nas.ini
 
   for line in (cat $ini_file)
+    # Comment line
+    if string match -q '#*' -- $line
+      continue
+    end
+
+    # Empty line
+    if test -z "$line"
+      continue
+    end
+
     set key (string split -m1 '=' $line)[1]
     set val (string split -m1 '=' $line)[2]
     set $key $val
