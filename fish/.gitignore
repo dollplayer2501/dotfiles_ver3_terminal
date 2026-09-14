@@ -11,12 +11,12 @@ conf.d/*
 !conf.d/11-my_env.fish
 !conf.d/21-add-path.fish
 !conf.d/31-abbr-add.fish
-!conf.d/40-fzf.fish
-!conf.d/40-mise.fish
-!conf.d/40-ranger.fish
-!conf.d/40-starship.fish
-!conf.d/40-vivid.fish
-!conf.d/40-zoxide.fish
+!conf.d/41-fzf.fish
+!conf.d/41-mise.fish
+!conf.d/41-ranger.fish
+!conf.d/41-starship.fish
+!conf.d/41-vivid.fish
+!conf.d/41-zoxide.fish
 
 !conf.d/ini/
 conf.d/ini/*
