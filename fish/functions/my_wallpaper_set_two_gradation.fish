@@ -25,8 +25,13 @@ function my_wallpaper_set_two_gradation --description "Create an image in a grad
   end
 
   for line in (cat $ini_file)
-    # Lines starting with `#` are treated as comments.
-    if test (string sub -l 1 -- $line) = '#'
+    # Comment line
+    if string match -q '#*' -- $line
+      continue
+    end
+
+    # Empty line
+    if test -z "$line"
       continue
     end
 

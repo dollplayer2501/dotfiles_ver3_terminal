@@ -23,6 +23,16 @@ function my_wallpaper_set_one_color --description "Create an image in a specifie
   end
 
   for line in (cat $ini_file)
+    # Comment line
+    if string match -q '#*' -- $line
+      continue
+    end
+
+    # Empty line
+    if test -z "$line"
+      continue
+    end
+
     set key (string split -m1 '=' $line)[1]
     set val (string split -m1 '=' $line)[2]
     set $key $val

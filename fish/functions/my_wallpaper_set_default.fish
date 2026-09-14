@@ -16,6 +16,16 @@ function my_wallpaper_set_default --description "Force the wallpaper provided by
 
   # Loading an ini file and setting keys and values
   for line in (cat $ini_file)
+    # Comment line
+    if string match -q '#*' -- $line
+      continue
+    end
+
+    # Empty line
+    if test -z "$line"
+      continue
+    end
+
     set key (string split -m1 '=' $line)[1]
     set val (string split -m1 '=' $line)[2]
     set $key $val
