@@ -15,27 +15,19 @@ function my_wallpaper_set_one_color --description "Create an image in a specifie
   #
 
   set --local ini_file ~/.config/fish/conf.d/ini/my_wallpaper_set_one_color.ini
-
-  if not test -f $ini_file
-    echo (set_color red)"INI file not found: $ini_file"(set_color normal) >&2
-    echo (set_color red)"Refer to the sample ini file in this directory."(set_color normal)
+  __my_function_load_ini "$ini_file"
+  if test $status -ne 0
     return 1
   end
 
-  for line in (cat $ini_file)
-    # Comment line
-    if string match -q '#*' -- $line
-      continue
-    end
+  if not set -q default_color; or test -z "$default_color"
+    echo "The variable `default_color` does not exist or is empty." >&2
+    return 1
+  end
 
-    # Empty line
-    if test -z "$line"
-      continue
-    end
-
-    set key (string split -m1 '=' $line)[1]
-    set val (string split -m1 '=' $line)[2]
-    set $key $val
+  if not set -q default_size; or test -z "$default_size"
+    echo "The variable `default_size` does not exist or is empty." >&2
+    return 1
   end
 
 
@@ -71,9 +63,9 @@ function my_wallpaper_set_one_color --description "Create an image in a specifie
   argparse $options -- $argv; or return 1
 
   if set -q _flag_help
-    echo (set_color green)"Usage: my_setting_color_wallpaper [-h|--help] [-c|--color color] [-s|--size size]"(set_color normal)
-    echo (set_color green)"  If nothing is specified, color is set $default_color and size is set $default_size."(set_color normal)
-    echo (set_color green)"  This setting references the value of $ini_file."(set_color normal)
+    echo (set_color green)"Usage: my_setting_color_wallpaper [-h|--help] [-c|--color color] [-s|--size size]"(set_color normal) >&2
+    echo (set_color green)"  If nothing is specified, color is set $default_color and size is set $default_size."(set_color normal) >&2
+    echo (set_color green)"  This setting references the value of $ini_file."(set_color normal) >&2
     return 0
   end
 

@@ -6,30 +6,16 @@
 function my_wallpaper_set_default --description "Force the wallpaper provided by the distribution to be set."
 
   set --local ini_file ~/.config/fish/conf.d/ini/my_wallpaper_set_default.ini
-
-  # Check for the existence of the ini file
-  if not test -f $ini_file
-    echo (set_color red)"INI file not found: $ini_file"(set_color normal) >&2
-    echo (set_color red)"Refer to the sample ini file in this directory."(set_color normal)
+  __my_function_load_ini "$ini_file"
+  if test $status -ne 0
     return 1
   end
 
-  # Loading an ini file and setting keys and values
-  for line in (cat $ini_file)
-    # Comment line
-    if string match -q '#*' -- $line
-      continue
-    end
-
-    # Empty line
-    if test -z "$line"
-      continue
-    end
-
-    set key (string split -m1 '=' $line)[1]
-    set val (string split -m1 '=' $line)[2]
-    set $key $val
+  if not set -q default_wallpaper; or test -z "$default_wallpaper"
+    echo "The variable `default_wallpaper` does not exist or is empty." >&2
+    return 1
   end
+
   echo (set_color green)"Set wallpaper, $default_wallpaper"(set_color normal)
 
   # Use `feh` to set the wallpaper.

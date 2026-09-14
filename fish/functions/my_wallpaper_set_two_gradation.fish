@@ -17,27 +17,29 @@ function my_wallpaper_set_two_gradation --description "Create an image in a grad
   #
 
   set --local ini_file ~/.config/fish/conf.d/ini/my_wallpaper_set_two_gradation.ini
-
-  if not test -f $ini_file
-    echo (set_color red)"INI file not found: $ini_file"(set_color normal) >&2
-    echo (set_color red)"Refer to the sample ini file in this directory."(set_color normal)
+  __my_function_load_ini "$ini_file"
+  if test $status -ne 0
     return 1
   end
 
-  for line in (cat $ini_file)
-    # Comment line
-    if string match -q '#*' -- $line
-      continue
-    end
+  if not set -q default_color_1; or test -z "$default_color_1"
+    echo "The variable `default_color_1` does not exist or is empty." >&2
+    return 1
+  end
 
-    # Empty line
-    if test -z "$line"
-      continue
-    end
+  if not set -q default_color_2; or test -z "$default_color_2"
+    echo "The variable `default_color_2` does not exist or is empty." >&2
+    return 1
+  end
 
-    set key (string split -m1 '=' $line)[1]
-    set val (string split -m1 '=' $line)[2]
-    set $key $val
+  if not set -q default_direction; or test -z "$default_direction"
+    echo "The variable `default_direction` does not exist or is empty." >&2
+    return 1
+  end
+
+  if not set -q default_size; or test -z "$default_size"
+    echo "The variable `default_size` does not exist or is empty." >&2
+    return 1
   end
 
 

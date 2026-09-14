@@ -4,26 +4,45 @@
 #
 
 function my_mount_nas --description "Mount NAS."
+
   set --local ini_file ~/.config/fish/conf.d/ini/my_mount_nas.ini
-
-  for line in (cat $ini_file)
-    # Comment line
-    if string match -q '#*' -- $line
-      continue
-    end
-
-    # Empty line
-    if test -z "$line"
-      continue
-    end
-
-    set key (string split -m1 '=' $line)[1]
-    set val (string split -m1 '=' $line)[2]
-    set $key $val
+  __my_function_load_ini "$ini_file"
+  if test $status -ne 0
+    return 1
   end
+
+  if not set -q mount_device; or test -z "$mount_device"
+    echo "The variable `mount_device` does not exist or is empty." >&2
+    return 1
+  end
+
+  if not set -q mount_point; or test -z "$mount_point"
+    echo "The variable `mount_point` does not exist or is empty." >&2
+    return 1
+  end
+
+#  for line in (cat $ini_file)
+#    # Comment line
+#    if string match -q '#*' -- $line
+#      continue
+#    end
+#
+#    # Empty line
+#    if test -z "$line"
+#      continue
+#    end
+#
+#    set key (string split -m1 '=' $line)[1]
+#    set val (string split -m1 '=' $line)[2]
+#    set $key $val
+#  end
   # echo $mount_device
   # echo $mount_point
   # return
+
+
+
+
 
   set --local message_tips "If NAS mount is unnecessary, execute `sudo umount $mount_point`"
 
