@@ -9,14 +9,14 @@ end
 # echo $backup_path_hidden
 
 
-#
-# public
-#
-
 echo (date) > $backup_path_public/hoge_public.txt
 echo (date) > $backup_path_hidden/hoge_hidden.txt
 git add $backup_path_public/hoge_public.txt
 
+
+#
+# public
+#
 
 command fc-list : family | sort -u | grep -v "Noto" > $backup_path_public/fc-list.txt
 git add $backup_path_public/fc-list.txt
