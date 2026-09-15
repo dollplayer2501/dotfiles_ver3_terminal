@@ -1,0 +1,47 @@
+Adwaita Mono
+Adwaita Sans
+Bitstream Vera Sans
+Bitstream Vera Sans Mono
+Bitstream Vera Serif
+Cantarell
+CaskaydiaMono Nerd Font,CaskaydiaMono NF
+CaskaydiaMono Nerd Font,CaskaydiaMono NF,CaskaydiaMono NF ExtraLight
+CaskaydiaMono Nerd Font,CaskaydiaMono NF,CaskaydiaMono NF Light
+CaskaydiaMono Nerd Font,CaskaydiaMono NF,CaskaydiaMono NF SemiBold
+CaskaydiaMono Nerd Font,CaskaydiaMono NF,CaskaydiaMono NF SemiLight
+CaskaydiaMono Nerd Font Mono,CaskaydiaMono NFM
+CaskaydiaMono Nerd Font Mono,CaskaydiaMono NFM,CaskaydiaMono NFM ExtraLight
+CaskaydiaMono Nerd Font Mono,CaskaydiaMono NFM,CaskaydiaMono NFM Light
+CaskaydiaMono Nerd Font Mono,CaskaydiaMono NFM,CaskaydiaMono NFM SemiBold
+CaskaydiaMono Nerd Font Mono,CaskaydiaMono NFM,CaskaydiaMono NFM SemiLight
+CaskaydiaMono Nerd Font Propo,CaskaydiaMono NFP
+CaskaydiaMono Nerd Font Propo,CaskaydiaMono NFP,CaskaydiaMono NFP ExtraLight
+CaskaydiaMono Nerd Font Propo,CaskaydiaMono NFP,CaskaydiaMono NFP Light
+CaskaydiaMono Nerd Font Propo,CaskaydiaMono NFP,CaskaydiaMono NFP SemiBold
+CaskaydiaMono Nerd Font Propo,CaskaydiaMono NFP,CaskaydiaMono NFP SemiLight
+DejaVu Math TeX Gyre
+DejaVu Sans
+DejaVu Sans,DejaVu Sans Condensed
+DejaVu Sans,DejaVu Sans Light
+DejaVu Sans Mono
+DejaVu Serif
+DejaVu Serif,DejaVu Serif Condensed
+Liberation Mono
+Liberation Sans
+Liberation Serif
+Open Sans
+Open Sans,Open Sans Condensed
+Open Sans,Open Sans Condensed ExtraBold
+Open Sans,Open Sans Condensed Light
+Open Sans,Open Sans Condensed SemiBold
+Open Sans,Open Sans ExtraBold
+Open Sans,Open Sans Light
+Open Sans,Open Sans SemiBold
+Raleway
+Raleway,Raleway Black
+Raleway,Raleway ExtraBold
+Raleway,Raleway ExtraLight
+Raleway,Raleway Light
+Raleway,Raleway Medium
+Raleway,Raleway SemiBold
+Raleway,Raleway Thin
