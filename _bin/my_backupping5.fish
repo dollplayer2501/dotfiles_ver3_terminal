@@ -53,11 +53,13 @@ command cp ~/.config/user-dirs.dirs $backup_path_public
 command cp ~/.config/user-dirs.locale $backup_path_public
 
 command ls -la ~/.local/share/icons/ > $backup_path_public/local_share_icons.txt
+command ls -la ~/.local/share/fonts/ > $backup_path_public/local_share_fonts.txt
 command ls -la ~/.local/share/themes/ > $backup_path_public/local_share_themes.txt
 
 git add $backup_path_public/settings.json
 git add $backup_path_public/user-dirs.dirs
 git add $backup_path_public/user-dirs.locale
 git add $backup_path_public/local_share_icons.txt
+git add $backup_path_public/local_share_fonts.txt
 git add $backup_path_public/local_share_themes.txt
 
