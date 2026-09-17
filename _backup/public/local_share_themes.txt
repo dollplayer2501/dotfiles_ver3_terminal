@@ -1,0 +1,6 @@
+total 20
+drwxr-xr-x  5 dollplayer dollplayer 4096 Apr 28 09:49 .
+drwx------ 19 dollplayer dollplayer 4096 Sep 17 12:20 ..
+drwxr-xr-x  5 dollplayer dollplayer 4096 Apr 28 02:18 Dream-Violet-Dark-GTK
+drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28 02:16 Material-Black-Plum
+drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28 02:12 VALYRIAN-Molten-Steel

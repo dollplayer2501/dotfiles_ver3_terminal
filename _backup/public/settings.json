@@ -1,0 +1,88 @@
+{
+  "editor.minimap.size": "fit",
+  "editor.minimap.showSlider": "always",
+  "editor.minimap.side": "left",
+
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "workbench.iconTheme": "dark-minimalist-icons",
+
+  "editor.fontSize": 15,
+  "editor.fontFamily": "'CaskaydiaMono NF Light', 'Droid Sans Mono', monospace",
+
+  "editor.lineHeight": 1.1,
+  "editor.cursorStyle": "block",
+
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ff7f7f",
+    "editor.lineHighlightBackground": "#ff7f7f44",
+    "terminalCursor.foreground": "#08052b",
+
+    "minimapSlider.background": "#ff7f7f33",
+    "minimapSlider.hoverBackground": "#ff7f7f55",
+
+    "list.activeSelectionBackground": "#ff7f7f44",
+    "list.inactiveSelectionBackground": "#ff7f7f66",
+    "list.hoverBackground": "#ff7f7f66",
+
+    "search.resultsInfoForeground": "#ff00ff",
+    "editor.findMatchBackground": "#ffff00"
+
+  },
+
+  "color-highlight.markRuler": false,
+  "color-highlight.markerType": "foreground",
+
+  "editor.colorDecorators": false,
+  "editor.renderWhitespace": "none",
+
+  "explorer.autoReveal": false,
+
+  "json.schemaDownload.enable": false,
+
+  "editor.autoIndent": "none",
+
+  "files.associations": {
+    "*.desktop": "ini"
+  },
+
+  "[python]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[lua]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[fish]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[shellscript]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[scss]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  }
+}

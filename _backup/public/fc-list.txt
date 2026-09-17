@@ -1,5 +1,9 @@
 Adwaita Mono
 Adwaita Sans
+Bernardo Moda
+Bernardo Moda Bold
+Bernardo Moda Contrast
+Bernardo Moda Semibold
 Bitstream Vera Sans
 Bitstream Vera Sans Mono
 Bitstream Vera Serif
@@ -37,6 +41,7 @@ Open Sans,Open Sans Condensed SemiBold
 Open Sans,Open Sans ExtraBold
 Open Sans,Open Sans Light
 Open Sans,Open Sans SemiBold
+Pfeffer Mediæval
 Raleway
 Raleway,Raleway Black
 Raleway,Raleway ExtraBold
@@ -45,3 +50,4 @@ Raleway,Raleway Light
 Raleway,Raleway Medium
 Raleway,Raleway SemiBold
 Raleway,Raleway Thin
+Rotunda Pommerania
