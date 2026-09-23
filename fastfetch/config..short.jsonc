@@ -6,7 +6,7 @@
     "color": {
       "1": "#ff7f7f",
       "2": "#7f3fbf",
-      "3": "#7fbaff",
+      "3": "#7f7fff",  // "#7fbaff",
       "4": "#ff00ff",
       "5": "#ff00ff",
       "6": "#ff00ff",
@@ -17,9 +17,9 @@
     "width": null,
     "height": null,
     "padding": {
-      "top": 0,
-      "left": 0,
-      "right": 2
+      "top": 2,
+      "left": 2,
+      "right": 6
     },
     "printRemaining": true,
     "preserveAspectRatio": false,
@@ -36,7 +36,7 @@
     "showErrors": true,
     "disableLinewrap": true,
     "hideCursor": false,
-    "separator": ": ",
+    "separator": "",
     "color": {
       "keys": "#7f3fbf",
       "title": "#ff7f7f",
@@ -101,7 +101,7 @@
     },
     "noBuffer": false,
     "key": {
-      "width": 0,
+      "width": 22,
       "type": "string",
       "paddingLeft": 0
     },
@@ -119,30 +119,17 @@
     "dsForceDrm": false
   },
   "modules": [
+    //
+    // https://github.com/fastfetch-cli/fastfetch-wiki/tree/master/Modules
+    //
+    "break",
     {
-      "type": "kernel"
-    },
-    {
-      "type": "memory",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      }
-    },
-    {
-      "type": "swap",
-      "percent": {
-        "green": 50,
-        "yellow": 80,
-        "type": 0
-      },
-      "separate": false
+      "type": "kernel",
+      "outputColor": "#ff7f7f"
     },
     {
       "type": "packages",
-      "disabled": [
-      ],
+      "disabled": [],
       "combined": false
     },
     {
@@ -160,33 +147,7 @@
       "showAllIps": false,
       "namePrefix": ""
     },
-    {
-      "type": "terminal"
-    },
-//    {
-//      "type": "uptime"
-//    },
-    {
-      "key": "Uptime",
-      "type": "command",
-      "text": "awk '{print $1}' /proc/uptime | my_python_sec_to_regular_time.py"
-     },
-    {
-      "key": "Login ",
-      "type": "command",
-      "text": "fish -c 'my_login_elapsed --second | my_python_sec_to_regular_time.py'"
-    },
-//    {
-//      "key": "Updates",
-//      "type": "command",
-//      "shell": "checkupdates --nocolor | wc -l && yay -Qu --nocolor | wc -l | awk '{s+=$1} END {print s}'"
-//    },
-    {
-      "type": "separator",
-      "string": "- ",
-      "outputColor": "#7f3fbf",
-      "times": 3
-    },
+    "break",
     {
       "type": "disk",
       "showRegular": true,
@@ -205,6 +166,22 @@
         "type": 0
       }
     },
-
+    "break",
+    {
+      "key": "Uptime",
+      "type": "command",
+      "text": "awk '{print $1}' /proc/uptime | my_python_sec_to_regular_time.py"
+     },
+    {
+      "key": "Login",
+      "type": "command",
+      "text": "fish -c 'my_login_elapsed --second | my_python_sec_to_regular_time.py'"
+    },
+    {
+      "key": "Memory",
+      "type": "command",
+      "text": "fish -c 'my_memory_mem --short'"
+    },
+    "break"
   ]
 }
