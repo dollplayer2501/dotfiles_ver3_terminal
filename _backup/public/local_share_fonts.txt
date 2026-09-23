@@ -1,11 +1,20 @@
-total 4324
-drwxr-xr-x  2 dollplayer dollplayer   4096 Sep 16 20:44 .
-drwx------ 19 dollplayer dollplayer   4096 Sep 17 12:20 ..
+total 5244
+drwxr-xr-x  2 dollplayer dollplayer   4096 Sep 22 21:17 .
+drwx------ 20 dollplayer dollplayer   4096 Sep 23 10:03 ..
 -rw-r--r--  1 dollplayer dollplayer 160956 Sep 16 20:43 bernardo-moda.modabold.ttf
 -rw-r--r--  1 dollplayer dollplayer 144132 Sep 16 20:43 bernardo-moda.modacontrast.ttf
 -rw-r--r--  1 dollplayer dollplayer 159120 Sep 16 20:43 bernardo-moda.modasemibold.ttf
 -rw-r--r--  1 dollplayer dollplayer 154584 Sep 16 20:43 bernardo-moda.moda.ttf
+-rw-r--r--  1 dollplayer dollplayer  41416 Sep 19 13:11 denira-signature.regular.otf
+-rw-r--r--  1 dollplayer dollplayer  87772 Sep 22 16:47 embolism-spark.regular.ttf
+-rw-r--r--  1 dollplayer dollplayer  37792 Sep 22 17:41 lilith.heavyitalic.ttf
+-rw-r--r--  1 dollplayer dollplayer  26976 Sep 22 17:41 lilith.heavy-leftie.ttf
+-rw-r--r--  1 dollplayer dollplayer  37780 Sep 22 17:41 lilith.heavy.ttf
+-rw-r--r--  1 dollplayer dollplayer  37360 Sep 22 17:41 lilith.heavy-wide.ttf
+-rw-r--r--  1 dollplayer dollplayer  37160 Sep 22 17:41 lilith.italic.ttf
+-rw-r--r--  1 dollplayer dollplayer 104608 Sep 22 17:41 mellarose.regular.otf
 -rw-r--r--  1 dollplayer dollplayer 139088 Sep 16 13:31 pfeffer-mediaeval.regular.otf
+-rw-r--r--  1 dollplayer dollplayer  45376 Sep 19 12:11 ptolemy.great-primer-18.otf
 -rw-r--r--  1 dollplayer dollplayer 161904 Sep 11  2025 Raleway-BlackItalic.ttf
 -rw-r--r--  1 dollplayer dollplayer 163408 Sep 11  2025 Raleway-Black.ttf
 -rw-r--r--  1 dollplayer dollplayer 162252 Sep 11  2025 Raleway-BoldItalic.ttf
@@ -24,7 +33,10 @@ drwx------ 19 dollplayer dollplayer   4096 Sep 17 12:20 ..
 -rw-r--r--  1 dollplayer dollplayer 162372 Sep 11  2025 Raleway-SemiBoldItalic.ttf
 -rw-r--r--  1 dollplayer dollplayer 163856 Sep 11  2025 Raleway-SemiBold.ttf
 -rw-r--r--  1 dollplayer dollplayer 161884 Sep 11  2025 Raleway-ThinItalic.ttf
+-rw-r--r--  1 dollplayer dollplayer 123940 Sep 22 17:47 raleway.thin.ttf
 -rw-r--r--  1 dollplayer dollplayer 163620 Sep 11  2025 Raleway-Thin.ttf
 -rw-r--r--  1 dollplayer dollplayer 309444 Sep 11  2025 Raleway-VariableFont_wght.ttf
+-rw-r--r--  1 dollplayer dollplayer  91864 Sep 19 13:18 romeo-handwritten.regular.ttf
 -rw-r--r--  1 dollplayer dollplayer  64832 Mar 22  2010 Rotunda_Pommerania.ttf
--rw-r--r--  1 dollplayer dollplayer     36 Sep 16 20:51 .uuid
+-rw-r--r--  1 dollplayer dollplayer  55324 Sep 22 16:37 simple-nathalie.regular.otf
+-rw-r--r--  1 dollplayer dollplayer 182764 Sep 19 13:26 teacher-signature.regular.otf

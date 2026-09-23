@@ -1,8 +1,10 @@
-total 28
-drwxr-xr-x  7 dollplayer dollplayer 4096 Apr 29 23:16 .
-drwx------ 19 dollplayer dollplayer 4096 Sep 17 12:20 ..
-drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28 10:27 Breeze-Round-Chameleon Dark Icons
-drwxr-xr-x  3 dollplayer dollplayer 4096 Apr 28 02:17 Drop-Orange
-drwxr-xr-x  3 dollplayer dollplayer 4096 Apr 28 02:17 Empty-Butterfly-Orange
-drwxr-xr-x 12 dollplayer dollplayer 4096 Apr 17 19:03 Gruvbox-Plus-Dark
-drwxr-xr-x  3 dollplayer dollplayer 4096 Apr 28 02:14 Moga-Neon-Orange
+total 36
+drwxr-xr-x  9 dollplayer dollplayer 4096 Sep 21 16:20 .
+drwx------ 20 dollplayer dollplayer 4096 Sep 23 10:03 ..
+drwxr-xr-x 14 dollplayer dollplayer 4096 Sep 21 13:25 Breeze-Round-Chameleon Dark Icons
+drwxr-xr-x  9 dollplayer dollplayer 4096 Sep 21 16:07 candy-icons
+drwxr-xr-x 10 dollplayer dollplayer 4096 Sep 21 16:21 Dedicated-to-Hackerer
+drwxr-xr-x  3 dollplayer dollplayer 4096 Sep 21 13:25 Drop-Orange
+drwxr-xr-x  3 dollplayer dollplayer 4096 Sep 21 13:25 Empty-Butterfly-Orange
+drwxr-xr-x 12 dollplayer dollplayer 4096 Sep 21 15:24 Gruvbox-Plus-Dark
+drwxr-xr-x  3 dollplayer dollplayer 4096 Sep 21 13:25 Moga-Neon-Orange

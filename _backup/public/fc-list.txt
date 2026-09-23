@@ -30,9 +30,13 @@ DejaVu Sans,DejaVu Sans Light
 DejaVu Sans Mono
 DejaVu Serif
 DejaVu Serif,DejaVu Serif Condensed
+Denira Signature
+Embolism Spark
 Liberation Mono
 Liberation Sans
 Liberation Serif
+Lilith
+Mellarose
 Open Sans
 Open Sans,Open Sans Condensed
 Open Sans,Open Sans Condensed ExtraBold
@@ -42,6 +46,7 @@ Open Sans,Open Sans ExtraBold
 Open Sans,Open Sans Light
 Open Sans,Open Sans SemiBold
 Pfeffer Mediæval
+Ptolemy,Ptolemy Great\-Primer 18
 Raleway
 Raleway,Raleway Black
 Raleway,Raleway ExtraBold
@@ -50,4 +55,7 @@ Raleway,Raleway Light
 Raleway,Raleway Medium
 Raleway,Raleway SemiBold
 Raleway,Raleway Thin
+Romeo Handwritten
 Rotunda Pommerania
+Simple Nathalie
+Teacher Signature
