@@ -1,6 +1,6 @@
-total 5244
+total 5248
 drwxr-xr-x  2 dollplayer dollplayer   4096 Sep 22 21:17 .
-drwx------ 20 dollplayer dollplayer   4096 Sep 25 09:40 ..
+drwx------ 20 dollplayer dollplayer   4096 Sep 26 17:46 ..
 -rw-r--r--  1 dollplayer dollplayer 160956 Sep 16 20:43 bernardo-moda.modabold.ttf
 -rw-r--r--  1 dollplayer dollplayer 144132 Sep 16 20:43 bernardo-moda.modacontrast.ttf
 -rw-r--r--  1 dollplayer dollplayer 159120 Sep 16 20:43 bernardo-moda.modasemibold.ttf
@@ -40,3 +40,4 @@ drwx------ 20 dollplayer dollplayer   4096 Sep 25 09:40 ..
 -rw-r--r--  1 dollplayer dollplayer  64832 Mar 22  2010 Rotunda_Pommerania.ttf
 -rw-r--r--  1 dollplayer dollplayer  55324 Sep 22 16:37 simple-nathalie.regular.otf
 -rw-r--r--  1 dollplayer dollplayer 182764 Sep 19 13:26 teacher-signature.regular.otf
+-rw-r--r--  1 dollplayer dollplayer     36 Sep 26 14:18 .uuid
