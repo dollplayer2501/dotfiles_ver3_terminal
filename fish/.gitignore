@@ -3,7 +3,6 @@
 completions/*
 !completions/.gitkeep
 !completions/my_*.fish
-completions/my_atomicparsley_*.fish
 !completions/ranger-cd.fish
 
 conf.d/*
@@ -27,7 +26,6 @@ functions/*
 !functions/.gitkeep
 !functions/fish_greeting.*
 !functions/my_*.fish
-functions/my_atomicparsley_*.fish
 !functions/ranger-cd.fish
 !functions/yazi-cd.fish
 
