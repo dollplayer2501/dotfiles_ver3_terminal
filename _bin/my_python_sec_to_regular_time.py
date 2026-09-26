@@ -84,26 +84,26 @@ if __name__ == "__main__":
   if total_seconds < SEC_IN_HOUR:
 
     display_str += (f"{minutes:2}min") if minutes > 0 else '0min'
-    display_str += (f" {seconds:2}sec") if seconds > 0 else ' 0sec'
+    display_str += (f" {seconds:2}sec") if seconds > 0 else '  0sec'
 
   elif total_seconds < SEC_IN_DAY:
 
     display_str += f"{hours}hr"
-    display_str += (f" {minutes:2}min") if minutes > 0 else ' 0min'
-    display_str += (f" {seconds:2}sec") if seconds > 0 else ' 0sec'
+    display_str += (f" {minutes:2}min") if minutes > 0 else '  0min'
+    display_str += (f" {seconds:2}sec") if seconds > 0 else '  0sec'
 
   elif total_seconds < SEC_IN_WEEK:
 
     display_str += f"{days}d"
-    display_str += (f" {hours}hr") if hours > 0 else ' 0hr'
-    display_str += (f" {minutes:2}min") if minutes > 0 else ' 0min'
+    display_str += (f" {hours:2}hr") if hours > 0 else '  0hr'
+    display_str += (f" {minutes:2}min") if minutes > 0 else '  0min'
 
   else:
 
     display_str += f"{weeks}wk"
     display_str += (f" {days}d") if days > 0 else ' 0d'
-    display_str += (f" {hours}hr") if hours > 0 else ' 0hr'
-    display_str += (f" {minutes:2}min") if minutes > 0 else ' 0min'
+    display_str += (f" {hours:2}hr") if hours > 0 else '  0hr'
+    display_str += (f" {minutes:2}min") if minutes > 0 else '  0min'
 
 
   print(display_str)
