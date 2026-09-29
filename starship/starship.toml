@@ -11,10 +11,7 @@ add_newline         = false
 #  Check `starship explain`
 #  See Unicode Box-drawing characters
 #
-# format              = """
-# [─┬](#ff7f7f) $hostname[,](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $time [┐](#ff7f7f)
-# [ ├](#ff7f7f) $directory  $git_status$git_branch$git_commit$git_state$git_metrics $fill $memory_usage [┤](#ff7f7f)
-# [ └](#ff7f7f)$character${custom.ranger}
+
 format              = """
 [┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $python$nodejs$lua
 [├](#ff7f7f) $directory  $git_status$git_branch$git_commit$git_state$git_metrics
@@ -33,8 +30,9 @@ format              = """
 #
 
 [fill]
-symbol              = ' '
-style               = '#ff7f7f'
+symbol              = '.'
+style               = '#7f3fbf'
+
 
 #
 #
@@ -55,8 +53,8 @@ disabled            = false
 format              = '[$user]($style)'
 style_user          = '#7f3fbf'
 style_root          = '#cc3980'
-disabled            = false
 show_always         = true
+disabled            = false
 
 [sudo]
 format              = '[-](#7f3fbf) [$symbol]($style)'
@@ -68,8 +66,8 @@ disabled            = false
 time_format         = '%a, %b %-d %Y, %H:%M:%S'
 format              = '[$time]($style)'
 style               = '#7f3fbf'
-disabled            = false
 use_12hr            = false
+disabled            = false
 
 [memory_usage]
 threshold           = -1
@@ -122,42 +120,54 @@ style               = '#7f3fbf'
 #
 
 [git_status]
-format              = '([\[$all_status$ahead_behind\]]($style) )'
+format              = '([\[$all_status$ahead_behind\]]($style))'
 conflicted          = '='
-ahead               = '⇡'
+ahead               = '[⇡${count}](#ff7f7f)'
 behind              = '⇣'
 diverged            = '⇕'
-up_to_date          = '✓'
-untracked           = '?'
+up_to_date          = '[✓](#7fbaff)'
+untracked           = '?${count}'
 stashed             = '$'
-modified            = '!'
-staged              = '+'
+modified            = '!${count}'
+staged              = '+${count}'
 renamed             = '»'
 deleted             = '✘'
 typechanged         = 't'
 style               = '#7f3fbf'
+disabled            = false
 
 [git_branch]
-format              = '([$symbol$branch(:$remote_branch)]($style) )'
+format              = '([\[$symbol$branch(:$remote_branch)\]]($style))'
 symbol              = ''
 style               = '#7f3fbf'
+disabled            = false
 
 [git_commit]
-format              = '([\($hash$tag\)]($style) )'
+commit_hash_length  = 7
+tag_disabled        = false
+only_detached       = false
+format              = '([\[$hash$tag\]]($style))'
 style               = '#7f3fbf'
+disabled            = false
 
 [git_state]
-format              = '([\($state( $progress_current of $progress_total)\)]($style) )'
-style               = '#7f3fbf'
+format              = '([\($state( $progress_current of $progress_total)\)]($style))'
+# style               = '#7f3fbf'
+style               = 'bold #ff7f7f'
+disabled            = false
 
 [git_metrics]
-format              = '([+$added]($added_style)[/](#7f3fbf)[-$deleted]($deleted_style) )'
+format              = '([\[](#7f3fbf)[+$added]($added_style)[/](#7f3fbf)[-$deleted]($deleted_style)[\]](#7f3fbf))'
 added_style         = '#7f3fbf'
 deleted_style       = '#7f3fbf'
-only_nonzero_diffs  = true
+only_nonzero_diffs  = false
 ignore_submodules   = true
 disabled            = false
 
+
+#
+#
+#
 
 [custom.ranger]
 shell               = ['fish']
