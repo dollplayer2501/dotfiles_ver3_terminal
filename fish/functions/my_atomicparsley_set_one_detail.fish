@@ -4,9 +4,6 @@
 
 function my_atomicparsley_set_one_detail --description "Set the artist name, song title, album title, and track number for a song."
 
-  # TODO:
-  #  This handles the setting process, but I think a display process is also necessary.
-
   #
   #
   #
@@ -67,17 +64,20 @@ function my_atomicparsley_set_one_detail --description "Set the artist name, son
   #
 
   if test $show_help -eq 1
-    echo (set_color green)"Usage: my_atomicparsley_one "(set_color --bold)"-i/--input"(set_color green --reset)" [M4A/MP3 FILE] [OPTIONS]"(set_color normal)
-    echo (set_color green)"  --artist   (string)"(set_color normal)
-    echo (set_color green)"  --title    (string)"(set_color normal)
-    echo (set_color green)"  --album    (string)"(set_color normal)
-    echo (set_color green)"  --tracknum (number)[/tot]"(set_color normal)
-    echo (set_color green)"  --help, -h"(set_color normal)
-    echo (set_color green)"Note:"(set_color normal)
-    echo (set_color green)"- The input file will be overwritten."(set_color normal)
-    echo (set_color green)"- For items that are not configured, no action is taken, and the state prior to modification is retained."(set_color normal)
-    echo (set_color green)"- If an MP3 file is specified as the input file, it is converted to an M4A file using ffmpeg."(set_color normal)
-    echo (set_color green)"- The individual settings are not reset to their default values."(set_color normal)
+    echo -n (set_color green)
+    echo "Usage: my_atomicparsley_one "(set_color --bold)"-i/--input"(set_color green --reset)" [M4A/MP3 FILE] [OPTIONS]"
+    echo "  --artist   (string)"
+    echo "  --title    (string)"
+    echo "  --album    (string)"
+    echo "  --tracknum (number)[/tot]"
+    echo "  --help, -h"
+    echo "Note:"
+    echo "  - The input file will be overwritten."
+    echo "  - For items that are not configured, no action is taken, and the state prior to modification is retained."
+    echo "  - If an MP3 file is specified as the input file, it is converted to an M4A file using ffmpeg."
+    echo "  - The individual settings are not reset to their default values."
+    echo -n (set_color normal)
+
     return 1
   end
 
@@ -85,11 +85,13 @@ function my_atomicparsley_set_one_detail --description "Set the artist name, son
   # Display of configuration items and settings
   #
 
-  echo (set_color green)"filename:" $filename(set_color normal)
-  echo (set_color green)"artist:  " $artist(set_color normal)
-  echo (set_color green)"title:   " $title(set_color normal)
-  echo (set_color green)"album:   " $album(set_color normal)
-  echo (set_color green)"tracknum:" $tracknum(set_color normal)
+  echo -n (set_color green)
+  echo "filename:" $filename
+  echo "artist:  " $artist
+  echo "title:   " $title
+  echo "album:   " $album
+  echo "tracknum:" $tracknum
+  echo -n (set_color normal)
 
   #
   # Pause and wait for key input.

@@ -11,7 +11,7 @@ function my_atomicparsley_set_many_jacket --description "Set the album art for t
   #
 
   if test (count $argv) -ne 2
-    echo "Usage: my_atomicparsley_jacket <directory> <image file>" >&2
+    echo "Usage: my_atomicparsley_set_many_jacket <directory> <image file>" >&2
     return 1
   end
 

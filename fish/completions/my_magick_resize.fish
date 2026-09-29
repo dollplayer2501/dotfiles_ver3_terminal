@@ -11,6 +11,10 @@ complete --command my_magick_resize \
   --force-files \
   --description "Input image file"
 
+# TODO:
+#  Even if enter "40\%" and execute, it is internally corrected to 40%.
+#  set -l input_arg (string replace -a '\\%' '%' $argv[1])
+
 complete --command my_magick_resize \
   --short-option r --long-option resize \
   --arguments "40% 1920x x1080 1920x1080" \
