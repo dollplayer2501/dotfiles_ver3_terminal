@@ -14,7 +14,7 @@ add_newline         = false
 
 format              = """
 [┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $python$nodejs$lua
-[├](#ff7f7f) $directory  $git_status$git_branch$git_commit$git_state$git_metrics
+[├](#ff7f7f) $directory $git_status$git_branch$git_commit$git_state$git_metrics
 [└](#ff7f7f)$character${custom.ranger}
 """
 
