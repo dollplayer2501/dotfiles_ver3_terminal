@@ -22,7 +22,8 @@ if __name__ == "__main__":
   total_seconds = None
 
   parser = argparse.ArgumentParser()
-  parser.add_argument('number', type=str, nargs='?', help='') # Support for pipe
+  parser.add_argument('number', type = str, nargs = '?', help = '') # Support for pipe
+  parser.add_argument('--vshort', action = 'store_true', help = '')
   args = parser.parse_args()
   # print(args)
 
@@ -105,6 +106,8 @@ if __name__ == "__main__":
     display_str += (f" {hours:2}hr") if hours > 0 else '  0hr'
     display_str += (f" {minutes:2}min") if minutes > 0 else '  0min'
 
+  if True == args.vshort:
+    display_str = ' ' . join(display_str.split())
 
   print(display_str)
   sys.exit()
