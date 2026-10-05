@@ -14,7 +14,7 @@ add_newline         = false
 
 format              = """
 [┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $python$nodejs$lua
-[├](#ff7f7f) $directory $git_status$git_branch$git_commit$git_state$git_metrics
+[├](#ff7f7f) $directory $git_status$git_branch$git_commit$git_state$git_metrics$mise
 [└](#ff7f7f)$character${custom.ranger}
 """
 
@@ -45,8 +45,8 @@ ssh_symbol          = 'SSH '
 trim_at             = '.companyname.com'
 
 [localip]
-ssh_only            = false
 format              = '[$localipv4](#7f3fbf)'
+ssh_only            = false
 disabled            = false
 
 [username]
@@ -161,6 +161,14 @@ added_style         = '#7f7fff'
 deleted_style       = '#7f7fff'
 only_nonzero_diffs  = false
 ignore_submodules   = true
+disabled            = false
+
+[mise]
+format              = '([\[$symbol$health\]]($style))'
+symbol              = 'mise:'
+healthy_symbol	    = 'valid'
+unhealthy_symbol	  = 'invalid'
+style               = '#7f3fbf'
 disabled            = false
 
 
