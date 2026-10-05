@@ -125,7 +125,7 @@ conflicted          = '='
 ahead               = '[⇡${count}](#ff7f7f)'
 behind              = '⇣'
 diverged            = '⇕'
-up_to_date          = '[✓](#7fbaff)'
+up_to_date          = '[✓](#7f7fff)'
 untracked           = '?${count}'
 stashed             = '$'
 modified            = '!${count}'
@@ -137,9 +137,9 @@ style               = '#7f3fbf'
 disabled            = false
 
 [git_branch]
-format              = '([\[$symbol$branch(:$remote_branch)\]]($style))'
+format              = '([\[](#7f3fbf)[$symbol$branch(:$remote_branch)]($style)[\]](#7f3fbf))'
 symbol              = ''
-style               = '#7f3fbf'
+style               = '#7f7fff'
 disabled            = false
 
 [git_commit]
@@ -148,18 +148,17 @@ tag_disabled        = false
 only_detached       = false
 format              = '([\[$hash$tag\]]($style))'
 style               = '#7f3fbf'
-disabled            = false
+disabled            = true
 
 [git_state]
 format              = '([\($state( $progress_current of $progress_total)\)]($style))'
-# style               = '#7f3fbf'
 style               = 'bold #ff7f7f'
 disabled            = false
 
 [git_metrics]
 format              = '([\[](#7f3fbf)[+$added]($added_style)[/](#7f3fbf)[-$deleted]($deleted_style)[\]](#7f3fbf))'
-added_style         = '#7f3fbf'
-deleted_style       = '#7f3fbf'
+added_style         = '#7f7fff'
+deleted_style       = '#7f7fff'
 only_nonzero_diffs  = false
 ignore_submodules   = true
 disabled            = false
