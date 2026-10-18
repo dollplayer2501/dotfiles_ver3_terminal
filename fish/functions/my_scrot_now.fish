@@ -36,10 +36,15 @@ function my_scrot_now -d "Scrot now."
   set --local monitors $parts[2]
 
   if test "2" = "$monitors"
+    #
+    # NOTE:
+    #   I am currently not using multiple monitors, so I cannot verify this.
+    #
     command scrot                               --silent --pointer $screenshot_path/$filename_20
     command scrot --autoselect    0,0,1920,1080 --silent --pointer $screenshot_path/$filename_21
     command scrot --autoselect 1920,0,1920,1080 --silent --pointer $screenshot_path/$filename_22
   else
     command scrot                               --silent --pointer $screenshot_path/$filename_10
+    command notify-send --expire-time 5000 --icon dialog-information "Screenshot!" $filename_10
   end
 end
