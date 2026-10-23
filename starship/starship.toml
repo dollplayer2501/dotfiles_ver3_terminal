@@ -13,7 +13,7 @@ add_newline         = false
 #
 
 format              = """
-[┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username $sudo $fill $python$nodejs$lua
+[┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username$sudo $fill$python$nodejs$lua
 [├](#ff7f7f) $directory $git_status$git_branch$git_commit$git_state$git_metrics$mise
 [└](#ff7f7f)$character${custom.ranger}
 """
@@ -57,7 +57,7 @@ show_always         = true
 disabled            = false
 
 [sudo]
-format              = '[-](#7f3fbf) [$symbol]($style)'
+format              = ' [-](#7f3fbf) [$symbol]($style)'
 style               = '#cc3980'
 symbol              = 'sudo'
 disabled            = false
@@ -103,15 +103,15 @@ error_symbol        = '[🯁🯂🯃](bold #cc3980)'
 #
 
 [python]
-format              = '([Python ${pyenv_prefix}(${version})( \($virtualenv\))]($style))'
+format              = '([ Python ${pyenv_prefix}(${version})( \($virtualenv\))]($style))'
 style               = '#7f3fbf'
 
 [nodejs]
-format              = '([Node ${version}]($style))'
+format              = '([ Node ${version}]($style))'
 style               = '#7f3fbf'
 
 [lua]
-format              = '([Lua ${version}]($style))'
+format              = '([ Lua ${version}]($style))'
 style               = '#7f3fbf'
 
 
