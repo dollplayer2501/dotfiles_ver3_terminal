@@ -4,16 +4,24 @@
 
 add_newline         = false
 
+#
+# TODO:
+#  Regarding Mise, this might not actually address the issue in question, might it?
+#  [WARN] - (starship::utils): Executing command "/usr/bin/mise" timed out.
+#  [WARN] - (starship::utils): You can set command_timeout in your config to a higher value to allow longer-running commands to keep executing.
+command_timeout     = 3000
+
 
 #
 # Left format
 #
 #  Check `starship explain`
 #  See Unicode Box-drawing characters
+#  NOTE: In the first line, a single space has been intentionally added at the end.
 #
 
 format              = """
-[┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username$sudo $fill$python$nodejs$lua
+[┬](#ff7f7f) $hostname [-](#7f3fbf) $localip [-](#7f3fbf) $username$sudo $fill$python$nodejs$lua 
 [├](#ff7f7f) $directory $git_status$git_branch$git_commit$git_state$git_metrics$mise
 [└](#ff7f7f)$character${custom.ranger}
 """
@@ -103,16 +111,18 @@ error_symbol        = '[🯁🯂🯃](bold #cc3980)'
 #
 
 [python]
-# TODO: I want to use a color that makes "$virtualen" stand out.
-format              = '([ Python ${pyenv_prefix}(${version})( \($virtualenv\))]($style))'
+format              = '([ [Python](#7f3fbf bold)${pyenv_prefix}${version}[$virtualenv](#ff7f7f)]($style))'
+version_format      = ' ${raw}'
 style               = '#7f3fbf'
 
 [nodejs]
-format              = '([ Node ${version}]($style))'
+format              = '([ [Node](#7f3fbf bold)${version}]($style))'
+version_format      = ' ${raw}'
 style               = '#7f3fbf'
 
 [lua]
-format              = '([ Lua ${version}]($style))'
+format              = '([ [Lua](#7f3fbf bold)${version}]($style))'
+version_format	    = ' ${raw}'
 style               = '#7f3fbf'
 
 
@@ -178,6 +188,10 @@ disabled            = false
 #
 
 [custom.ranger]
+#
+# NOTE:
+#   This also relates to the configuration of Ranger and the Fish shell.
+#
 shell               = ['fish']
 command             = "echo $STARSHIP_SHELL_INDICATOR"
 when                = true
