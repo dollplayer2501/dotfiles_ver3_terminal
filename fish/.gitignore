@@ -1,9 +1,11 @@
+#
+# Let’s switch to an approach where we list each file individually—even if it’s a bit of a hassle!
+# (Except in special cases.)
+#
+
 .git/
 
-completions/*
-!completions/.gitkeep
-!completions/my_*.fish
-!completions/ranger-cd.fish
+###
 
 conf.d/*
 !conf.d/.gitkeep
@@ -24,12 +26,66 @@ conf.d/ini/*
 !conf.d/ini/.gitkeep
 !conf.d/ini/my_*.SAMPLE.ini
 
+###
+
 functions/*
 !functions/.gitkeep
 !functions/fish_greeting.*
-!functions/my_*.fish
+# !functions/my_atomicparsley_del_one_detail.fish
+# !functions/my_atomicparsley_get_many_detail.fish
+# !functions/my_atomicparsley_set_many_jacket.fish
+# !functions/my_atomicparsley_set_one_detail.fish
+!functions/my_color_code.fish
+!functions/my_color_now.fish
+!functions/my_color_scheme.fish
+# !functions/my_cp_extend.fish
+!functions/my_extract.fish
+# !functions/my_ffprobe.fish
+!functions/my_fish_history_delete_contains.fish
+!functions/my_login_elapsed.fish
+!functions/my_loop_function_template.fish
+!functions/my_magick_append.fish
+!functions/my_magick_duotone_many.fish
+!functions/my_magick_duotone_one.fish
+!functions/my_magick_resize.fish
+!functions/my_memory_mem.fish
+!functions/my_mount_nas.fish
+!functions/my_mv_and_ln.fish
+!functions/my_scrot_now.fish
+!functions/my_scrot_wait.fish
+!functions/my_vivid_themes.fish
+!functions/my_volume_get.fish
+!functions/my_volume_set.fish
+!functions/my_wallpaper_set_default.fish
+!functions/my_wallpaper_set_one_color.fish
+!functions/my_wallpaper_set_two_gradation.fish
 !functions/ranger-cd.fish
-!functions/yazi-cd.fish
+
+#
+
+completions/*
+!completions/.gitkeep
+# !completions/my_atomicparsley_set_many_jacket.fish
+# !completions/my_atomicparsley_set_one_detail.fish
+!completions/my_color_code.fish
+!completions/my_color_now.fish
+!completions/my_color_scheme.fish
+!completions/my_extract.fish
+!completions/my_fish_history_delete_contains.fish
+!completions/my_magick_resize.fish
+!completions/my_memory_mem.fish
+!completions/my_mount_nas.fish
+!completions/my_scrot_now.fish
+!completions/my_scrot_wait.fish
+!completions/my_volume_get.fish
+!completions/my_volume_set.fish
+!completions/my_wallpaper_set_default.fish
+!completions/my_wallpaper_set_one_color.fish
+!completions/my_wallpaper_set_two_gradation.fish
+!completions/ranger-cd.fish
+# !completions/suki_normal.fish
+
+###
 
 themes/*
 !themes/.gitkeep
