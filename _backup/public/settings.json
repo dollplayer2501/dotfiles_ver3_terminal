@@ -85,5 +85,23 @@
     "editor.tabSize": 2,
     "editor.insertSpaces": true
   },
-  "todohighlight.keywordsPattern": "TODO:|FIXME:|NOTE:|\\\\(([^)]+)\\\\)"
+
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.maxFilesForSearch": 5120,
+  "todohighlight.toggleURI": false,
+  "todohighlight.defaultStyle": {
+    "fontStyle": "normal",
+    "color": "#08052b"
+  },
+  "todohighlight.keywords": [
+    {
+      "text": "NOTE:",
+      "backgroundColor": "#7fbaff"
+    },
+    {
+      "text": "TODO:",
+      "backgroundColor": "#ff9400"
+    }
+  ]
 }

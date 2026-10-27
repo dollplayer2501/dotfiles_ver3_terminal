@@ -1,10 +1,10 @@
 total 36
 drwxr-xr-x  9 dollplayer dollplayer 4096 Sep 22 21:54 .
-drwx------ 22 dollplayer dollplayer 4096 Oct 26 21:42 ..
-drwxr-xr-x  5 dollplayer dollplayer 4096 Apr 28 02:18 Dream-Violet-Dark-GTK
-drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28 02:16 Material-Black-Plum
+drwx------ 22 dollplayer dollplayer 4096 Oct 27 22:01 ..
+drwxr-xr-x  5 dollplayer dollplayer 4096 Apr 28  2026 Dream-Violet-Dark-GTK
+drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28  2026 Material-Black-Plum
 drwxr-xr-x  8 dollplayer dollplayer 4096 Sep 22 21:54 Midnight-Green
 drwxr-xr-x  7 dollplayer dollplayer 4096 Sep 22 21:53 Midnight-NightGreen
 drwxr-xr-x  7 dollplayer dollplayer 4096 Sep 22 21:52 Midnight-NightOrange
 drwxr-xr-x  8 dollplayer dollplayer 4096 Sep 21 16:48 Midnight-Orange
-drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28 02:12 VALYRIAN-Molten-Steel
+drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28  2026 VALYRIAN-Molten-Steel
