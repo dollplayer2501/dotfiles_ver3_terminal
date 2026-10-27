@@ -103,6 +103,7 @@ error_symbol        = '[🯁🯂🯃](bold #cc3980)'
 #
 
 [python]
+# TODO: I want to use a color that makes "$virtualen" stand out.
 format              = '([ Python ${pyenv_prefix}(${version})( \($virtualenv\))]($style))'
 style               = '#7f3fbf'
 
