@@ -30,7 +30,7 @@
   },
 
   "color-highlight.markRuler": false,
-  "color-highlight.markerType": "foreground",
+  "color-highlight.markerType": "underline",
 
   "editor.colorDecorators": false,
   "editor.renderWhitespace": "none",
@@ -84,5 +84,6 @@
   "[html]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true
-  }
+  },
+  "todohighlight.keywordsPattern": "TODO:|FIXME:|NOTE:|\\\\(([^)]+)\\\\)"
 }

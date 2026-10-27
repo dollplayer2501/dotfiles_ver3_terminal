@@ -16,6 +16,8 @@ conf.d/*
 !conf.d/41-starship.fish
 !conf.d/41-vivid.fish
 !conf.d/41-zoxide.fish
+!conf.d/51-my_function_load_ini.fish
+!conf.d/zz-my_fish_frozen_theme.fish
 
 !conf.d/ini/
 conf.d/ini/*
