@@ -103,5 +103,13 @@
       "text": "TODO:",
       "backgroundColor": "#ff9400"
     }
+  ],
+  "better-todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "[ ]",
+    "[x]"
   ]
 }
