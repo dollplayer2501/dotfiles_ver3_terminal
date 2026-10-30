@@ -1,6 +1,6 @@
 total 36
 drwxr-xr-x  9 dollplayer dollplayer 4096 Sep 22 21:54 .
-drwx------ 22 dollplayer dollplayer 4096 Oct 29 14:50 ..
+drwx------ 22 dollplayer dollplayer 4096 Oct 30 16:56 ..
 drwxr-xr-x  5 dollplayer dollplayer 4096 Apr 28  2026 Dream-Violet-Dark-GTK
 drwxr-xr-x 14 dollplayer dollplayer 4096 Apr 28  2026 Material-Black-Plum
 drwxr-xr-x  8 dollplayer dollplayer 4096 Sep 22 21:54 Midnight-Green
