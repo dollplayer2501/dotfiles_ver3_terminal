@@ -131,26 +131,32 @@ style               = '#7f3fbf'
 #
 
 [git_status]
-format              = '([\[$all_status$ahead_behind\]]($style))'
-conflicted          = '='
-ahead               = '[⇡${count}](#ff7f7f)'
-behind              = '⇣'
-diverged            = '⇕'
-up_to_date          = '[✓](#7f7fff)'
-untracked           = '?${count}'
-stashed             = '$'
-modified            = '!${count}'
+format              = '([\[$conflicted$stashed$deleted$renamed$modified$typechanged$staged$untracked/$ahead_behind\]]($style))'
+#
+conflicted          = '[=](#7f7fff)'
+stashed             = '[$](#7f7fff)'
+deleted             = '[✘](#7f7fff)'
+renamed             = '[»](#7f7fff)'
+modified            = '[!${count}](#7f7fff)'
+typechanged         = '[t](#7f7fff)'
 staged              = '+${count}'
-renamed             = '»'
-deleted             = '✘'
-typechanged         = 't'
+untracked           = '?${count}'
+#
+ahead               = '[⇡${count}](#ff7f7f)'
+behind              = '[⇣](#7f7fff)'
+#
+diverged            = '[⇕](#7f7fff)'
+up_to_date          = '[✓](#7f7fff)'
+#
 style               = '#7f3fbf'
 disabled            = false
 
 [git_branch]
-format              = '([\[](#7f3fbf)[$symbol$branch(:$remote_branch)]($style)[\]](#7f3fbf))'
+format              = '[\[](#7f3fbf)[$symbol$branch(:$remote_branch)]($style)[\]](#7f3fbf)'
 symbol              = ''
 style               = '#7f7fff'
+ignore_branches     = ['master', 'main']
+ignore_remotes      = ['origin', 'upstream']
 disabled            = false
 
 [git_commit]
@@ -175,6 +181,9 @@ ignore_submodules   = true
 disabled            = false
 
 [mise]
+#
+# TODO: 'vaild' is appearing. The cause has not yet been investigated.
+#
 format              = '([\[$symbol$health\]]($style))'
 symbol              = 'mise:'
 healthy_symbol	    = 'valid'
