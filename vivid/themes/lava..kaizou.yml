@@ -168,4 +168,4 @@ myset:
   level1:
     foreground: base01
   level2:
-    foreground: base1
+    foreground: yellow

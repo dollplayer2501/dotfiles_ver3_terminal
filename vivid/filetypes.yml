@@ -810,6 +810,9 @@ myset:
     - .dmrc
     # NOTE: This does not work, directory does not work
     # - __pycache__
-
+  level2:
+    - mise.toml
+    - netlify.toml
+    - package.json
 
 
