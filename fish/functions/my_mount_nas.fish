@@ -2,6 +2,9 @@
 # NOTE:
 #  This script references an external file (an .ini file) for settings such as mount points.
 #
+# TODO:
+#  Perform health checks on components such as the two HDDs in the NAS.
+#
 
 function my_mount_nas --description "Mount NAS."
 

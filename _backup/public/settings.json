@@ -12,6 +12,9 @@
   "editor.lineHeight": 1.1,
   "editor.cursorStyle": "block",
 
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.preview.scrollEditorWithPreview": true,
+
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#ff7f7f",
     "editor.lineHighlightBackground": "#ff7f7f44",
@@ -86,24 +89,6 @@
     "editor.insertSpaces": true
   },
 
-  "todohighlight.isEnable": true,
-  "todohighlight.isCaseSensitive": true,
-  "todohighlight.maxFilesForSearch": 5120,
-  "todohighlight.toggleURI": false,
-  "todohighlight.defaultStyle": {
-    "fontStyle": "normal",
-    "color": "#08052b"
-  },
-  "todohighlight.keywords": [
-    {
-      "text": "NOTE:",
-      "backgroundColor": "#7fbaff"
-    },
-    {
-      "text": "TODO:",
-      "backgroundColor": "#ff9400"
-    }
-  ],
   "better-todo-tree.general.tags": [
     "BUG",
     "HACK",
