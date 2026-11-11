@@ -3,4 +3,4 @@
 #
 
 complete --command my_volume_set --erase
-complete --command my_volume_set --no-files
+complete --command my_volume_set --no-files --arguments '(seq 1 100)'
