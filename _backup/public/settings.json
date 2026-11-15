@@ -96,5 +96,7 @@
     "TODO",
     "[ ]",
     "[x]"
-  ]
+  ],
+  "markdown-preview-enhanced.previewColorScheme": "editorColorScheme",
+  "markdown-preview-enhanced.previewTheme": "atom-dark.css"
 }
